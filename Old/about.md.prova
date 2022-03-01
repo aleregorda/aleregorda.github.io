@@ -8,7 +8,7 @@ Sito di prova riguardo {{ site.title }} di {{ site.author.name }}.
 
 {{ page.example }}
 
-{% include big-cat.html %}
+[//]: # {% include big-cat.html %}
 
 {% for i in site.data.animals %}
 - The {{ i.name }} is a {{ i.size }} animal.

@@ -1,0 +1,13 @@
+# Site settings
+title: Titolo di prova
+author:
+  name: Alessandro Regorda
+  email: alessandro.regorda@gmail.com
+description: "Sito di prova con Jekyll."
+
+# Build settings
+remote_theme: jekyll/minima
+minima:
+  skin: dark
+
+#theme: jekyll-theme-midnight

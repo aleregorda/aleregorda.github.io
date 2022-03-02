@@ -1,7 +1,7 @@
 ---
 title: CV
 layout: single
-permalink: /cv/
+permalink: /cvs/
 #toc: true
 #toc_label: "Contents"
 sidebar:

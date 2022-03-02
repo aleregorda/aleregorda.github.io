@@ -1,5 +1,5 @@
 ---
-title: FALCON
+title: "FALCON code"
 layout: single
 permalink: /falcon/
 #toc: true
@@ -7,6 +7,3 @@ permalink: /falcon/
 sidebar:
   nav: "doc_falcon"
 ---
-## Description of the code
-
-## Benchmarks

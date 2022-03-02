@@ -29,14 +29,20 @@ main:
   #   url: /sitemap/
 
 doc_falcon:
-  - title: "FALCON"
-#    url: https://aleregorda.github.io/Code_description/
-    url: /falcon/
+  - title: "Code description"
+    url: /docs/description/
     children:
-      - title: "Description"
-        url: /falcon/#description-of-the-code
-      - title: "Benchmarks"
-        url: /falcon/#benchmarks
+      - title: "Markers advection"
+        url: /docs/description/#markers-advection
+      - title: "Nonlinear rhology"
+        url: /docs/description/#nonlinear-rheology
+  - title: "Benchmarks"
+    url: /docs/benchmark/
+    children:
+      - title: "Stokes flow"
+        url: "/docs/benchmark/#stokes-flow"
+      - title: "Mantle advection"
+        url: "/docs/benchmark/#mantle-advection"
       
 doc_pub:
   - title: "Publications"

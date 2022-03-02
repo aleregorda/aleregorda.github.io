@@ -1,12 +1,50 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  - title: "About"
-    url: https://mmistakes.github.io/minimal-mistakes/about/
+  - title: "Home"
+    url: https://aleregorda.github.io
   - title: "FALCON"
-    url: https://aleregorda.github.io/Code_description/
+#    url: https://aleregorda.github.io/Code_description/
+    url: /falcon/
+    children:
+      - title: "Description"
+        url: /falcon/#description-of-the-code
+      - title: "Benchmarks"
+        url: /falcon/#benchmarks
+  - title: "Publications"
+    url: /publications/
+    children:
+      - title: "Papers"
+        url: /publications/#papers
+      - title: "Oral presentations"
+        url: /publications/#oral-presentations
+      - title: "Posters"
+        url: /publications/#posters
+  - title: "CV"
+    url: /cv/
+#  - title: "About"
+#    url: /about/
   # - title: "Sample Collections"
   #   url: /collection-archive/
-  - title: "Sitemap"
-    url: /sitemap/
+  # - title: "Sitemap"
+  #   url: /sitemap/
+
+doc_falcon:
+  - title: "FALCON"
+#    url: https://aleregorda.github.io/Code_description/
+    url: /falcon/
+    children:
+      - title: "Description"
+        url: /falcon/#description-of-the-code
+      - title: "Benchmarks"
+        url: /falcon/#benchmarks
+      
+doc_pub:
+  - title: "Publications"
+    url: /publications/
+    children:
+      - title: "Papers"
+        url: /publications/#papers
+      - title: "Oral presentations"
+        url: /publications/#oral-presentations
+      - title: "Posters"
+        url: /publications/#posters

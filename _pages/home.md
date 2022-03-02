@@ -1,11 +1,13 @@
 ---
+title: ""
 layout: single
-title: "Home"
+permalink: /home/
+#toc: true
+#toc_label: "Contents"
 author_profile: true
+#sidebar:
+#  nav: "main"
 ---
-
-{{ content }}
-
 <h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "This is what happens if you stop watching Netflix" }}</h3>
 
 {% if paginator %}

@@ -109,10 +109,10 @@ author:
   location         : "Milan, Italy"
   email            : 
   links:
-    - label: "Personal email"
+    - label: "Personal e-mail"
       icon: "fas fa-fw fa-envelope"
       url: "mailto:alessandro.regorda@gmail.com"
-    - label: "Work email"
+    - label: "Work e-mail"
       icon: "fas fa-fw fa-envelope-open"
       url: "mailto:alessandro.regorda@unimi.it"
     - label: "GitHub"

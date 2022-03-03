@@ -1,5 +1,5 @@
 ---
-title: CV
+title: Curriculum vitae
 layout: single
 permalink: /cv/
 author_profile: true

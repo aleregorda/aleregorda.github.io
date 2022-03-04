@@ -1,14 +1,17 @@
 ---
-title: ""
 layout: single
-permalink: /home/
-#toc: true
-#toc_label: "Contents"
+title: ""
 author_profile: true
-#sidebar:
-#  nav: "main"
+permalink: /docs/home/
 ---
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "This is what happens if you stop watching Netflix" }}</h3>
+
+# Work in progress...
+
+###### This is what happens if you stop watching Netflix
+
+<!--- {{ content }}
+
+<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "This is what happens if you stop watching Netflix" }}</h3> -->
 
 {% if paginator %}
   {% assign posts = paginator.posts %}

@@ -1,7 +1,7 @@
 # main links
 main:
   - title: "Home"
-    url: https://aleregorda.github.io
+    url: /docs/home/
   - title: "FALCON"
 #    url: https://aleregorda.github.io/Code_description/
     url: /falcon/

@@ -9,6 +9,8 @@ author_profile: true
 #  nav: "main"
 ---
 
-# Work in progress...
+*<span style="font-size:12px">The .pdf file of my curriculum vitae can be downloaded from <a href="/assets/files/CV_Regorda.pdf" target="_blank">here</a>.</span>*
 
-<a href="/assets/files/CV_Regorda.pdf" target="_blank">Curriculum vitae</a>
+<object data="/assets/files/CV_Regorda.pdf" type="application/pdf" width="1000px" height="1000px">
+    <embed src="/assets/files/CV_Regorda.pdf"></embed>
+</object>

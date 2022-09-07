@@ -34,7 +34,21 @@ Phase changes and hydration | <a href="/falcon/#hydrated-sinking-cylinder" targe
 Melting | <a href="/falcon/#melting" target="_blank">Experimental melting curves</a>
 
 # <span style="font-size:22px"><u>Stokes flow</u></span>
-![Alt text](/assets/files/errors.pdf "stokes-flow")
+<small>The problem consists of determining velocity field (*u*, *v*) and pressure *p* in case of a manufactured solution with
+prescribed body forces.
+The domain is a unit square a constant viscosity and the penalty parameter is set to 10<sup>7</sup>. Velocity boundary
+conditions are set to no slip (**v** = **0**) on all boundaries. The problem is performed for different grid resolution between
+8 × 8 and 1024 × 1024 elements.</small>
+<figure>
+  <img src="/assets/images/errors-1.png"/>
+  <figcaption>Velocity and pressure error for the Stokes flow experiment between generated and analytical solution as a function of element size (panel a), and comparison between smoothed pressure and analytical solution as function of x coordinate for a grid resolution of 128 × 128 elements (panel b)</figcaption>
+</figure>
+<figure>
+  <img src="/assets/images/MUMPS-1.png"/>
+  <figcaption>Analysis, factorisation, solution and total solve times (panel a) and factorisation memory usage
+(panel b) as a function of the total number of degrees of freedom for the Stokes flow experiment</figcaption>
+</figure>
+
 # <span style="font-size:22px"><u>Zalesak disk</u></span>
 # <span style="font-size:22px"><u>Conservative Velocity Interpolation</u></span>
 # <span style="font-size:22px"><u>Poiseuille flow</u></span>

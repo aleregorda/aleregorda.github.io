@@ -6,8 +6,8 @@ main:
 #    url: https://aleregorda.github.io/Code_description/
     url: /falcon/
     children:
-      - title: "Description"
-        url: /falcon/#description-of-the-code
+      - title: "Applications"
+        url: /falcon/#applications
       - title: "Benchmarks"
         url: /falcon/#benchmarks
   - title: "Publications"
@@ -45,20 +45,20 @@ doc_falcon:
         url: "/docs/benchmark/#mantle-advection"
       
 doc_falcon2:
-  - title: "Description"
+  - title: "Applications"
     url: /falcon/
     children:
-      - title: "Markers advection"
-        url: /falcon/#markers-advection
-      - title: "Nonlinear rhology"
-        url: /falcon/#nonlinear-rheology
+      - title: "Venus"
+        url: /falcon/#venus
+      - title: "Sesia"
+        url: /falcon/#sesia
   - title: "Benchmark"
     url: /falcon/
     children:
       - title: "Stokes flow"
         url: /falcon/#stokes-flow
-      - title: "Mantle advection"
-        url: "/falcon/#mantle-advection"
+      - title: "Markers advection"
+        url: "/falcon/#markers-advection"
 
 doc_pub:
   - title: "Publications"

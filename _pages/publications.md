@@ -6,7 +6,7 @@ author_profile: false
 sidebar:
   nav: "doc_pub"
 ---
-### Papers
+# <span style="font-size:22px"><u>Papers</u></span>
 
 <ul>
 
@@ -32,7 +32,7 @@ s2.0-84892711627&origin=inward&txGid=319c0a1f1351e93faaee95a497732c15" target="_
 
 </ul>
 
-### Oral presentations
+# <span style="font-size:22px"><u>Oral presentations</u></span>
 
 <ul>
 
@@ -59,7 +59,7 @@ subduction system: differences and similarities of 2D model predictions with exa
 
 </ul>
 
-### Posters
+# <span style="font-size:22px"><u>Posters</u></span>
 
 <ul>
 

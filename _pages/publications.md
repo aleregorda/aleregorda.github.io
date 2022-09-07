@@ -10,7 +10,11 @@ sidebar:
 
 <ul>
 
-<li><small><b>Alessandro Regorda</b>, Maria Iole Spalla, Manuel Roda, Jean-Marc Lardeaux, Anna Maria Marotta (2021). Metamorphic Facies and Deformation Fabrics Diagnostic of Subduction: Insights From 2D Numerical Models. Geochemistry, Geophysics, Geosystems, 2021, 22(10), <a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2021GC009899" target="_blank">doi:10.1029/2021GC009899</a>.</small></li>
+<li><small>Marco Filippi, Davide Zanoni, Gisella Rebay, Manuel Roda, <b>Alessandro Regorda</b>, Jean-Marc Lardeaux, Maria Iole Spalla (2022). Quantification of Alpine Metamorphism in the Edolo Diabase, Central Southern Alps. Geosciences, 12(8), 312, <a href="https://www.mdpi.com/2076-3263/12/8/312" target="_blank">doi:10.3390/geosciences12080312</a>.</small></li>
+
+<li><small>Arcangela Bollino, <b>Alessandro Regorda</b>, Roberto Sabadini, Anna Maria Marotta (2022). From rifting to oceanization in the Gulf of Aden: Insights from 2D numerical models. Tectonophysics, 838, 229483, <a href="https://www.sciencedirect.com/science/article/pii/S0040195122002773#!" target="_blank">doi:110.1016/j.tecto.2022.229483</a>.</small></li>
+
+<li><small><b>Alessandro Regorda</b>, Maria Iole Spalla, Manuel Roda, Jean-Marc Lardeaux, Anna Maria Marotta (2021). Metamorphic Facies and Deformation Fabrics Diagnostic of Subduction: Insights From 2D Numerical Models. Geochemistry, Geophysics, Geosystems, 22(10), <a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2021GC009899" target="_blank">doi:10.1029/2021GC009899</a>.</small></li>
 
 <li><small>Anna Maria Marotta, Federica Restelli, Arcangela Bollino, <b>Alessandro Regorda</b>, Roberto Sabadini (2020). The static and time-dependent signature of ocean-continent and ocean-ocean subduction: the case studies of Sumatra and Mariana complexes. Geophysical Journal International, vol. 221(2), p. 788–825, <a href="https://academic.oup.com/gji/article/221/2/788/5707408" target="_blank">doi:10.1093/gji/ggaa029</a>.</small></li>
 
@@ -58,6 +62,8 @@ subduction system: differences and similarities of 2D model predictions with exa
 ### Posters
 
 <ul>
+
+<li><small>GNGTS Annual congress - [Trieste, 27/06/2027-29/06/2022] - "Parametric study of the effects of micro-continents collision in a oceanic subduction systems by 2D numerical simulations" - Regorda A., Roda M. & Thieulot C.</small></li>
 
 <li><small>GNGTS Annual congress - [Online, 22/06/2021-24/06/2021] - "Metamorphic and deformation patterns produced during an oceanic subduction: insights from 2D
 numerical models" - Regorda A., Spalla M.I., Roda M., Lardeaux J.-M. & Marotta A.M.</small></li>

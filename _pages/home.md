@@ -1,6 +1,6 @@
 ---
 layout: single
-title: ""
+title: "Home"
 author_profile: true
 permalink: /docs/home/
 ---

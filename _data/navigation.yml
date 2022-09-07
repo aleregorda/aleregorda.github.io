@@ -46,19 +46,59 @@ doc_falcon:
       
 doc_falcon2:
   - title: "Applications"
-    url: /falcon/
+    url: /falcon/#applications
     children:
       - title: "Venus"
         url: /falcon/#venus
       - title: "Sesia"
         url: /falcon/#sesia
   - title: "Benchmark"
-    url: /falcon/
+    url: /falcon/#benchmarks
     children:
       - title: "Stokes flow"
         url: /falcon/#stokes-flow
-      - title: "Markers advection"
-        url: "/falcon/#markers-advection"
+      - title: "Zalesak disk"
+        url: "/falcon/#zalesak-disk"
+      - title: "Conservative Velocity Interpolation"
+        url: "/falcon/#conservative-velocity-interpolation"
+      - title: "Poiseuille flow"
+        url: "/falcon/#poiseuille-flow"
+      - title: "Instantaneous 2D sphere"
+        url: /falcon/#instantaneous-2d-sphere
+      - title: "Rayleigh-Taylor experiment"
+        url: "/falcon/#rayleigh-taylor-experiment"
+      - title: "Falling block"
+        url: /falcon/#falling-block
+      - title: "2D Stokes sphere"
+        url: "/falcon/#2d-stokes-sphere"
+      - title: "Stabilisation algorithm"
+        url: /falcon/#stabilisation-algorithm
+      - title: "Topography relaxation"
+        url: "/falcon/#topography-relaxation"
+      - title: "Spontaneous subduction"
+        url: /falcon/#spontaneous-subduction
+      - title: "Slab detachment"
+        url: "/falcon/#slab-detachment"
+      - title: "Indenter"
+        url: /falcon/#indenter
+      - title: "Brick"
+        url: "/falcon/#brick"
+      - title: "Advection stabilisation"
+        url: /falcon/#advection-stabilisation
+      - title: "Simple shear heating"
+        url: "/falcon/#simple-shear-heating"
+      - title: "Shear and adiabatic heating"
+        url: /falcon/#shear-and-adiabatic-heating
+      - title: "Mantle convection"
+        url: "/falcon/#mantle-convection"
+      - title: "Visco-plastic mantle convection"
+        url: /falcon/#visco-plastic-mantle-convection
+      - title: "Thin layer entrainment"
+        url: "/falcon/#thin-layer-entrainment"
+      - title: "Hydrated sinking cylinder"
+        url: /falcon/#hydrated-sinking-cylinder
+      - title: "Melting"
+        url: "/falcon/#melting"
 
 doc_pub:
   - title: "Publications"

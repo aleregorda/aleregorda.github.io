@@ -40,17 +40,46 @@ The domain is a unit square a constant viscosity and the penalty parameter is se
 conditions are set to no slip (**v** = **0**) on all boundaries. The problem is performed for different grid resolution between
 8 × 8 and 1024 × 1024 elements.</small>
 <figure>
-  <img src="/assets/images/errors-1.png"/>
+  <img src="/assets/images/errors-1.png" alt="errors" style="width:700px"/>
   <figcaption>Velocity and pressure error for the Stokes flow experiment between generated and analytical solution as a function of element size (panel a), and comparison between smoothed pressure and analytical solution as function of x coordinate for a grid resolution of 128 × 128 elements (panel b)</figcaption>
 </figure>
 <figure>
-  <img src="/assets/images/MUMPS-1.png"/>
+  <img src="/assets/images/MUMPS-1.png" alt="mumps" style="width:700px"/>
   <figcaption>Analysis, factorisation, solution and total solve times (panel a) and factorisation memory usage
 (panel b) as a function of the total number of degrees of freedom for the Stokes flow experiment</figcaption>
 </figure>
 
 # <span style="font-size:22px"><u>Zalesak disk</u></span>
+<small>The benchmark is performed in a unit square domain with a grid resolution of 32 × 32 elements and values of Courant number (CFL) between 0.25 and 1.
+The velocity field is prescribed in the entire domain.
+At t=0, the disk is centred at position (0.5; 0.75) with a radius R=0.15 and has a vertical fissure 0.05 wide and 0.2 high.</small>
+
+<figure>
+  <img src="/assets/images/Zalesak-1.png" alt="zalesak" style="width:250px"/>
+  <figcaption>Position of the Zalesak disk at t=0, 0.25, 0.5 and 0.75 (orange, red, blue and green, respectively) for the
+case with Courant number of 1.</figcaption>
+</figure>
+<figure>
+  <img src="/assets/images/zal_marker-1.png" alt="zal_error" style="width:450px"/>
+  <figcaption>Distance from the centre as function of time for values of Courant number of of 0.25, 0.3, 0.5, 0.75 and 1
+(green, orange, blue, black and red, respectively).</figcaption>
+</figure>
+
 # <span style="font-size:22px"><u>Conservative Velocity Interpolation</u></span>
+<small>The Conservative Velocity Interpolation (CVI) correction is checked by means of the <a href="/falcon/#stokes-flow" target="_blank">Stokes flow experiment</a>. The advection of Lagrangian markers is performed using either a 2nd-order or a 4th-order Runge-Kutta scheme with CFL=0.5 and an initial random distribution of 25 markers per element.</small>
+
+<figure>
+  <img src="/assets/images/CVI-1.png" alt="cvi" style="width:700px"/>
+  <figcaption>Maximum and minimum number of markers per element, with or without the CVI correction and using either a 2nd-order or a
+4th-order Runge-Kutta (RK) scheme.</figcaption>
+</figure>
+<figure>
+  <img src="/assets/images/CVI_time-1.png" alt="cvi_time" style="width:700px"/>
+  <figcaption>Number of markers per element (first row) and markers distribution (second row) with 2nd-order Runge-Kutta scheme.
+Panels a: model with CVI at t=1;
+panels b and c: comparison between models without and with the CVI correction, respectively, at t=600; panels d: model with CVI correction at t=2000.</figcaption>
+</figure>
+
 # <span style="font-size:22px"><u>Poiseuille flow</u></span>
 # <span style="font-size:22px"><u>Instantaneous 2D sphere</u></span>
 # <span style="font-size:22px"><u>Rayleigh-Taylor experiment</u></span>

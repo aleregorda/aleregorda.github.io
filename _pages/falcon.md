@@ -37,11 +37,11 @@ Melting | <a href="/falcon/#melting" target="_blank">Experimental melting curves
 <small>The problem consists of determining velocity field (*u*, *v*) and pressure *p* in case of a manufactured solution with
 prescribed body forces.
 The domain is a unit square a constant viscosity and the penalty parameter is set to 10<sup>7</sup>. Velocity boundary
-conditions are set to no slip (**v** = **0**) on all boundaries. The problem is performed for different grid resolution between
-8 × 8 and 1024 × 1024 elements.</small>
+conditions are set to no slip (**v**=**0**) on all boundaries. The problem is performed for different grid resolution between
+8×8 and 1024×1024 elements.</small>
 <figure>
   <img src="/assets/images/errors-1.png" alt="errors" style="width:700px"/>
-  <figcaption>Velocity and pressure error for the Stokes flow experiment between generated and analytical solution as a function of element size (panel a), and comparison between smoothed pressure and analytical solution as function of x coordinate for a grid resolution of 128 × 128 elements (panel b)</figcaption>
+  <figcaption>Velocity and pressure error for the Stokes flow experiment between generated and analytical solution as a function of element size (panel a), and comparison between smoothed pressure and analytical solution as function of x coordinate for a grid resolution of 128×128 elements (panel b)</figcaption>
 </figure>
 <figure>
   <img src="/assets/images/MUMPS-1.png" alt="mumps" style="width:700px"/>
@@ -50,19 +50,17 @@ conditions are set to no slip (**v** = **0**) on all boundaries. The problem is 
 </figure>
 
 # <span style="font-size:22px"><u>Zalesak disk</u></span>
-<small>The benchmark is performed in a unit square domain with a grid resolution of 32 × 32 elements and values of Courant number (CFL) between 0.25 and 1.
+<small>The benchmark is performed in a unit square domain with a grid resolution of 32×32 elements and values of Courant number (CFL) between 0.25 and 1.
 The velocity field is prescribed in the entire domain.
 At t=0, the disk is centred at position (0.5; 0.75) with a radius R=0.15 and has a vertical fissure 0.05 wide and 0.2 high.</small>
-
 <figure>
-  <img src="/assets/images/zal_marker-1.png" alt="zal_error" style="width:450px"/>
+  <img src="/assets/images/zal_marker-1.png" alt="zal_error" style="width:700px"/>
   <figcaption>Distance from the centre as function of time for values of Courant number of of 0.25, 0.3, 0.5, 0.75 and 1
 (green, orange, blue, black and red, respectively).</figcaption>
 </figure>
 
 # <span style="font-size:22px"><u>Conservative Velocity Interpolation</u></span>
 <small>The Conservative Velocity Interpolation (CVI) correction is checked by means of the <a href="/falcon/#stokes-flow" target="_blank">Stokes flow experiment</a>. The advection of Lagrangian markers is performed using either a 2nd-order or a 4th-order Runge-Kutta scheme with CFL=0.5 and an initial random distribution of 25 markers per element.</small>
-
 <figure>
   <img src="/assets/images/CVI-1.png" alt="cvi" style="width:700px"/>
   <figcaption>Maximum and minimum number of markers per element, with or without the CVI correction and using either a 2nd-order or a
@@ -70,9 +68,44 @@ At t=0, the disk is centred at position (0.5; 0.75) with a radius R=0.15 and has
 </figure>
 
 # <span style="font-size:22px"><u>Poiseuille flow</u></span>
+<small>The domain is a rectangle with L<sub>x</sub>=2 and L<sub>y</sub>=1, constant density and viscosity, gravity
+acceleration equal to 0 and the penalty parameter is 10<sup>8</sup>. The grid is composed by 40×20 elements. Velocity boundary conditions are set to no slip (**v**=**0**) at the top and the bottom, and a parabolic profile is imposed on the sides, with v<sub>x</sub>=y(1−y) and v<sub>y</sub>=0.</small>
+<figure>
+  <img src="/assets/images/Poiseuille-1.png" alt="poiseuille" style="width:700px"/>
+  <figcaption>Velocity field (panel a), pressure (panel b) and divergence velocity of a Poiseuille flow in case of the classic
+penalty method (no iterations) and after one Uzawa iteration (panel c and d, respectively).</figcaption>
+</figure>
+
 # <span style="font-size:22px"><u>Instantaneous 2D sphere</u></span>
+<small>The domain is a unit square with gravity equal to -1. The fluid has constant density and viscosity. The sphere is in the middle of the domain with a radius
+R=0.123456798 with constant density and viscosity higher than the fluid. Different types of velocity boundary conditions have been tested with grid resolutions between 16×16 and 512×512 elements and different average schemes for the viscosity (harmonic, geometric and arithmetic).
+The velocity in the centre of the sphere, minimum and maximum velocities and pressures on the entire domain, v<sub>rms</sub> and average pressure on the entire domain have been compared to other codes.</small>
+<figure>
+  <img src="/assets/images/vrms_NS-1.png" alt="inst_sphere" style="width:700px"/>
+  <figcaption>v<sub>rms</sub> as function of element size for the instantaneous 2D sphere experiment in case of no slip boundary
+conditions and with different average schemes for the viscosity. Results are compared with results obtained by other
+numerical codes.</figcaption>
+</figure>
+
 # <span style="font-size:22px"><u>Rayleigh-Taylor experiment</u></span>
+<small>The domain has L<sub>x</sub>=0.9142 and L<sub>y</sub>=1 and gravity equal to -1. Two fluids with same constant viscosities and different densities are distributed in the domain, with the lighter fluid at the bottom. The initial interface between the fluids is given by y(x)=0.2+0.02 cos(πx L<sub>x</sub>). The experiment is performed with grid sizes between 50×50 and 256×256 elements. Velocity boundary conditions are set to no slip at the top and the bottom, and to free slip at the sides of the domain.</small>
+<figure>
+  <img src="/assets/images/RT-1.png" alt="RT" style="width:700px"/>
+  <figcaption>v<sub>rms</sub> of the Rayleigh-Taylor experiment as function of time for different resolution of the grid.</figcaption>
+</figure>
+
 # <span style="font-size:22px"><u>Falling block</u></span>
+<small>The domain is square with L<sub>x</sub>=L<sub>y</sub>= 500 km and the grid is composed by 50×50 elements with 25 markers in each element.
+The block is initially centred at x=250 km; y=400 km and has a size of 100×100 km. The fluid
+surrounding the block has constant viscosities and densities. The benchmark tests with different viscosities and densities
+of the block, with higher density than the surrounding fluid. Velocity boundary conditions are set to free slip conditions on all sides of the
+domain. The velocity in the centre of the falling block at t=0 is measured for all experiments and it is plotted as function of the viscosity contrast.</small>
+<figure>
+  <img src="/assets/images/Falling-1.png" alt="falling" style="width:700px"/>
+  <figcaption>Initial velocity relative to the density contrast at the centre of the falling block as function of the viscosity
+contrast between the block and the surrounding fluid.</figcaption>
+</figure>
+
 # <span style="font-size:22px"><u>2D Stokes sphere</u></span>
 # <span style="font-size:22px"><u>Stabilisation algorithm</u></span>
 # <span style="font-size:22px"><u>Topography relaxation</u></span>

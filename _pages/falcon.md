@@ -55,11 +55,6 @@ The velocity field is prescribed in the entire domain.
 At t=0, the disk is centred at position (0.5; 0.75) with a radius R=0.15 and has a vertical fissure 0.05 wide and 0.2 high.</small>
 
 <figure>
-  <img src="/assets/images/Zalesak-1.png" alt="zalesak" style="width:250px"/>
-  <figcaption>Position of the Zalesak disk at t=0, 0.25, 0.5 and 0.75 (orange, red, blue and green, respectively) for the
-case with Courant number of 1.</figcaption>
-</figure>
-<figure>
   <img src="/assets/images/zal_marker-1.png" alt="zal_error" style="width:450px"/>
   <figcaption>Distance from the centre as function of time for values of Courant number of of 0.25, 0.3, 0.5, 0.75 and 1
 (green, orange, blue, black and red, respectively).</figcaption>

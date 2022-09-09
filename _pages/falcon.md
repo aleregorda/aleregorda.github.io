@@ -68,12 +68,6 @@ At t=0, the disk is centred at position (0.5; 0.75) with a radius R=0.15 and has
   <figcaption>Maximum and minimum number of markers per element, with or without the CVI correction and using either a 2nd-order or a
 4th-order Runge-Kutta (RK) scheme.</figcaption>
 </figure>
-<figure>
-  <img src="/assets/images/CVI_time-1.png" alt="cvi_time" style="width:700px"/>
-  <figcaption>Number of markers per element (first row) and markers distribution (second row) with 2nd-order Runge-Kutta scheme.
-Panels a: model with CVI at t=1;
-panels b and c: comparison between models without and with the CVI correction, respectively, at t=600; panels d: model with CVI correction at t=2000.</figcaption>
-</figure>
 
 # <span style="font-size:22px"><u>Poiseuille flow</u></span>
 # <span style="font-size:22px"><u>Instantaneous 2D sphere</u></span>

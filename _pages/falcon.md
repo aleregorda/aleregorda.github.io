@@ -138,7 +138,7 @@ stabilisation algorithm.</figcaption>
 <figure>
   <img src="/assets/images/Crameri-1.png" alt="crameri" style="width:700px"/>
   <figcaption>Maximum topography as function of time in comparison with
-the analytical solution (black line) and results obtained by <a href="https://academic.oup.com/gji/article/189/1/38/575556?login=false" target="_blank">Crameri et al. (2012)</a> with UNDERWORLD (yellow line) and SULEC (blue line).</figcaption>
+the analytical solution (black line) and results shown by <a href="https://academic.oup.com/gji/article/189/1/38/575556?login=false" target="_blank">Crameri et al. (2012)</a> with UNDERWORLD (yellow line) and SULEC (blue line).</figcaption>
 </figure>
 
 # <span style="font-size:22px"><u>Spontaneous subduction</u></span>

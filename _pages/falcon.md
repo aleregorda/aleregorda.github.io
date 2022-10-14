@@ -29,7 +29,7 @@ Markers advection | <a href="/falcon/#zalesak-disk" target="_blank">Zalesak disk
 Momentum<br>equation | <a href="/falcon/#poiseuille-flow" target="_blank">Poiseuille flow</a><br><a href="/falcon/#instantaneous-2d-sphere" target="_blank">Instantaneous 2D sphere</a><br><a href="/falcon/#rayleigh-taylor-experiment" target="_blank">Rayleigh-Taylor experiment</a><br><a href="/falcon/#falling-block" target="_blank">Falling block</a> | <a href="https://se.copernicus.org/preprints/se-2014-49/" target="_blank">Thieulot (2014)</a><br><a href="http://cedricthieulot.net/manual.pdf" target="_blank">FIELDSTONE (12.2.22)</a><br><a href="https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/97JB01353" target="_blank">Van Keken et al. (1997)</a><br><a href="https://www.sciencedirect.com/science/article/pii/S0031920103001900?via%3Dihub" target="_blank">Gerya and Yuen (2003)</a>
 Sticky air and<br>free surface | <a href="/falcon/#2d-stokes-sphere" target="_blank">2D Stokes sphere</a><br><a href="/falcon/#stabilisation-algorithm" target="_blank">Stabilisation algorithm</a><br><a href="/falcon/#topography-relaxation" target="_blank">Topography relaxation</a><br><a href="/falcon/#spontaneous-subduction" target="_blank">Spontaneous subduction</a> | <a href="http://cedricthieulot.net/manual.pdf" target="_blank">FIELDSTONE (12.2.23)</a><br><a href="https://www.sciencedirect.com/science/article/pii/S0031920110000877?via%3Dihub" target="_blank">Kaus et al. (2010)</a><br><a href="https://academic.oup.com/gji/article/189/1/38/575556?login=false" target="_blank">Crameri et al. (2012)</a><br><a href="https://www.sciencedirect.com/science/article/pii/S0031920108001568" target="_blank">Schmeling et al. (2008)</a>
 Nonlinear rheology | <a href="/falcon/#slab-detachment" target="_blank">Slab detachment</a><br><a href="/falcon/#indenter" target="_blank">Indenter</a><br><a href="/falcon/#brick" target="_blank">Brick</a> | <a href="https://www.sciencedirect.com/science/article/pii/S0012821X11000252?via%3Dihub" target="_blank">Schmalholz (2011)</a><br><a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2008JB005591" target="_blank">Thieulot et al. (2008)</a><br><a href="https://se.copernicus.org/articles/9/267/2018/" target="_blank">Glerum et al. (2018)</a>
-Energy equation | <a href="/falcon/#advection-stabilisation" target="_blank">Advection stabilisation</a><br><a href="/falcon/#simple-shear-heating" target="_blank">Simple shear heating</a><br><a href="/falcon/#shear-and-adiabatic-heating" target="_blank">Shear and adiabatic heating</a>
+Energy equation | <a href="/falcon/#advection-stabilisation" target="_blank">Advection stabilisation</a><br><a href="/falcon/#simple-shear-heating" target="_blank">Simple shear heating</a><br><a href="/falcon/#shear-and-adiabatic-heating" target="_blank">Shear and adiabatic heating</a> | <a href="https://www.sciencedirect.com/science/article/abs/pii/S0031920111001336?via%3Dihub" target="_blank">Thieulot (2011)</a><br>-<br><a href="https://www.cambridge.org/core/books/introduction-to-numerical-geodynamic-modelling/F2CDB0729FE6DE586BCD9B18C059AE07" target="_blank">Gerya (2010)</a>
 Energy+momentum | <a href="/falcon/#mantle-convection" target="_blank">Mantle convection</a><br><a href="/falcon/#visco-plastic-mantle-convection" target="_blank">Visco-plastic mantle convection</a><br><a href="/falcon/#thin-layer-entrainment" target="_blank">Thin layer entrainment</a>
 Phase changes<br>and hydration | <a href="/falcon/#hydrated-sinking-cylinder" target="_blank">Hydrated sinking cylinder</a>
 Melting | <a href="/falcon/#melting" target="_blank">Experimental melting curves</a>
@@ -192,8 +192,44 @@ depths.</figcaption>
 </figure>
 
 # <span style="font-size:22px"><u>Advection stabilisation</u></span>
+<small>The 1D advection problem proposed by <a href="https://onlinelibrary.wiley.com/doi/book/10.1002/0470013826" target="_blank">Donea and Huerta (2003)</a> and <a href="https://www.sciencedirect.com/science/article/abs/pii/S0031920111001336?via%3Dihub" target="_blank">Thieulot (2011)</a> is performed to verify the
+effectiveness of the SUPG method to stabilise the advection term of the energy equation. The domain is a 1D segment
+with L<sub>x</sub>=1 composed by 50 elements and a discontinuity in the thermal field placed at x=0.25. Temperature is set
+to 1 for x ≤ 0.25 and to 0 for x > 0.25. Velocity is set to u<sub>x</sub>=1 in the entire domain. The simulation is performed
+for 250 time steps, with dt = 0.002, so the thermal discontinuity should be at x = 0.75 at the end of the simulation.
+Temperature profiles at the end of the simulation are function of the dimensionless coefficient γ = τu<sub>x</sub>/h.</small>
+<figure>
+  <img src="/assets/images/Advection-1.png" alt="advection" style="width:700px"/>
+  <figcaption>Temperature profile as function of x for the advection stabilisation benchmark. Purple line indicates the
+initial temperature profile; the green line indicates the analytical temperature profile after 250 time steps; blue line
+indicates the temperature profile after 250 time steps in case of the classic Galerkin method (γ=0); orange line
+indicates the temperature profile after 250 time steps in case of the SUPG method (γ=0.045).</figcaption>
+</figure>
+
 # <span style="font-size:22px"><u>Simple shear heating</u></span>
+<small>This exercise is performed in an unit square domain composed by 128×128 elements. The velocity field is prescribed
+on the entire domain with u<sub>x</sub>=(L<sub>y</sub>−y)y; viscosity, density and specific heat are fixed to 1, while thermal
+conductivity and radiogenic energy are fixed to 0. Therefore, the energy equation can be simplified and fixing T(t=0)=0, the temperature can be find as
+T(t)=H<sub>s</sub>t, where shear heating H<sub>s</sub> can be calculated as H<sub>s</sub>(x,y)=(1−2y)<sup>2</sup>.</small>
+<figure>
+  <img src="/assets/images/Analytical_Shear-1.png" alt="shear" style="width:700px"/>
+  <figcaption>Velocity (panel a), temperature (panel b) and shear heating (panel c) as function of the y coordinate
+for the simple shear experiment. The solutions predicted by the model (red lines) are compared with the analytical
+solutions (dashed blue lines).</figcaption>
+</figure>
+
 # <span style="font-size:22px"><u>Shear and adiabatic heating</u></span>
+<small>This problem is performed as presented in Exercise 9.4 in <a href="https://www.cambridge.org/core/books/introduction-to-numerical-geodynamic-modelling/F2CDB0729FE6DE586BCD9B18C059AE07" target="_blank">Gerya (2010)</a>. Two materials are vertically separated in a
+rectangular domain with L<sub>x</sub>=1000 km, L<sub>y</sub>=1500 km and a grid resolution of 30×20 elements. Constant thermal
+coefficient expansion (α=3×10<sup>−5</sup> K<sup>−1</sup>), temperature (T=1300 K) and gravity acceleration (g<sub>y</sub>=−10 ms<sup>2</sup>) are
+assumed in the whole domain. Fluid 1 on the left side of the domain has lower densitiea nd viscosities with respect to fluid 2 on the right side of the domain. Velocity boundary conditions are set to free slip on all sides of the domain.</small>
+<figure>
+  <img src="/assets/images/Energy-1.png" alt="energy" style="width:700px"/>
+  <figcaption>Comparison between shear (first column), adiabatic (second column) and total (third column) energy
+predicted by the code (panels a, b and c) and those created using example <i>Shear adiabatic heating.m</i> from Exercise
+9.4 in <a href="https://www.cambridge.org/core/books/introduction-to-numerical-geodynamic-modelling/F2CDB0729FE6DE586BCD9B18C059AE07" target="_blank">Gerya (2010)</a> (panels d, e and f).</figcaption>
+</figure>
+
 # <span style="font-size:22px"><u>Mantle convection</u></span>
 # <span style="font-size:22px"><u>Visco-plastic mantle convection</u></span>
 # <span style="font-size:22px"><u>Thin layer entrainment</u></span>

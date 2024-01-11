@@ -37,8 +37,8 @@ Markers advection | <a href="/falcon/#zalesak-disk" target="_blank">Zalesak disk
 Momentum<br>equation | <a href="/falcon/#poiseuille-flow" target="_blank">Poiseuille flow</a><br><a href="/falcon/#instantaneous-2d-sphere" target="_blank">Instantaneous 2D sphere</a><br><a href="/falcon/#rayleigh-taylor-experiment" target="_blank">Rayleigh-Taylor experiment</a><br><a href="/falcon/#falling-block" target="_blank">Falling block</a> | <a href="https://se.copernicus.org/preprints/se-2014-49/" target="_blank">Thieulot (2014)</a><br><a href="http://cedricthieulot.net/manual.pdf" target="_blank">FIELDSTONE (12.2.22)</a><br><a href="https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/97JB01353" target="_blank">Van Keken et al. (1997)</a><br><a href="https://www.sciencedirect.com/science/article/pii/S0031920103001900?via%3Dihub" target="_blank">Gerya and Yuen (2003)</a>
 Sticky air and<br>free surface | <a href="/falcon/#2d-stokes-sphere" target="_blank">2D Stokes sphere</a><br><a href="/falcon/#stabilisation-algorithm" target="_blank">Stabilisation algorithm</a><br><a href="/falcon/#topography-relaxation" target="_blank">Topography relaxation</a><br><a href="/falcon/#spontaneous-subduction" target="_blank">Spontaneous subduction</a> | <a href="http://cedricthieulot.net/manual.pdf" target="_blank">FIELDSTONE (12.2.23)</a><br><a href="https://www.sciencedirect.com/science/article/pii/S0031920110000877?via%3Dihub" target="_blank">Kaus et al. (2010)</a><br><a href="https://academic.oup.com/gji/article/189/1/38/575556?login=false" target="_blank">Crameri et al. (2012)</a><br><a href="https://www.sciencedirect.com/science/article/pii/S0031920108001568" target="_blank">Schmeling et al. (2008)</a>
 Nonlinear rheology | <a href="/falcon/#slab-detachment" target="_blank">Slab detachment</a><br><a href="/falcon/#indenter" target="_blank">Indenter</a><br><a href="/falcon/#brick" target="_blank">Brick</a> | <a href="https://www.sciencedirect.com/science/article/pii/S0012821X11000252?via%3Dihub" target="_blank">Schmalholz (2011)</a><br><a href="https://agupubs.onlinelibrary.wiley.com/doi/full/10.1029/2008JB005591" target="_blank">Thieulot et al. (2008)</a><br><a href="https://se.copernicus.org/articles/9/267/2018/" target="_blank">Glerum et al. (2018)</a>
-Energy equation | <a href="/falcon/#advection-stabilisation" target="_blank">Advection stabilisation</a><br><a href="/falcon/#simple-shear-heating" target="_blank">Simple shear heating</a><br><a href="/falcon/#shear-and-adiabatic-heating" target="_blank">Shear and adiabatic heating</a> | <a href="https://www.sciencedirect.com/science/article/abs/pii/S0031920111001336?via%3Dihub" target="_blank">Thieulot (2011)</a><br>-<br><a href="https://www.cambridge.org/core/books/introduction-to-numerical-geodynamic-modelling/F2CDB0729FE6DE586BCD9B18C059AE07" target="_blank">Gerya (2010)</a>
-Energy+momentum | <a href="/falcon/#mantle-convection" target="_blank">Mantle convection</a><br><a href="/falcon/#visco-plastic-mantle-convection" target="_blank">Visco-plastic mantle convection</a><br><a href="/falcon/#thin-layer-entrainment" target="_blank">Thin layer entrainment</a>
+Energy equation | <a href="/falcon/#advection-stabilisation" target="_blank">Advection stabilisation</a><br><a href="/falcon/#simple-shear-heating" target="_blank">Simple shear heating</a><br><a href="/falcon/#shear-and-adiabatic-heating" target="_blank">Shear and adiabatic heating</a> | <a href="https://www.sciencedirect.com/science/article/abs/pii/S0031920111001336?via%3Dihub" target="_blank">Thieulot (2011)</a><br>Analytical solution<br><a href="https://www.cambridge.org/core/books/introduction-to-numerical-geodynamic-modelling/F2CDB0729FE6DE586BCD9B18C059AE07" target="_blank">Gerya (2010)</a>
+Energy+momentum | <a href="/falcon/#mantle-convection" target="_blank">Mantle convection</a><br><a href="/falcon/#visco-plastic-mantle-convection" target="_blank">Visco-plastic mantle convection</a><br><a href="/falcon/#thin-layer-entrainment" target="_blank">Thin layer entrainment</a> | <a href="https://academic.oup.com/gji/article/98/1/23/622167?login=false" target="_blank">Blankenbach et al. (1989)</a>
 Phase changes<br>and hydration | <a href="/falcon/#hydrated-sinking-cylinder" target="_blank">Hydrated sinking cylinder</a>
 Melting | <a href="/falcon/#melting" target="_blank">Experimental melting curves</a>
 
@@ -87,11 +87,10 @@ penalty method (no iterations) and after one Uzawa iteration (panel c and d, res
 
 # <span style="font-size:22px"><u>Instantaneous 2D sphere</u></span>
 <small>The experiment is performed as explained in <a href="http://cedricthieulot.net/manual.pdf" target="_blank">FIELDSTONE (12.2.22)</a>. The domain is a unit square with gravity equal to -1. The fluid has constant density and viscosity. The sphere is in the middle of the domain with a radius
-R=0.123456798 with constant density and viscosity higher than the fluid. Different types of velocity boundary conditions have been tested with grid resolutions between 16×16 and 512×512 elements and different average schemes for the viscosity (harmonic, geometric and arithmetic).
-The velocity in the centre of the sphere, minimum and maximum velocities and pressures on the entire domain, v<sub>rms</sub> and average pressure on the entire domain have been compared to <a href="https://aspect.geodynamics.org/" target="_blank">ASPECT</a> and can be found <a href="https://github.com/cedrict/fieldstone/tree/master/images/stokes_sphere2D" target="_blank">here</a>.</small>
+R=0.123456798 with constant density and viscosity higher than the fluid. Different types of velocity boundary conditions have been tested with grid resolutions between 16×16 and 512×512 elements and different average schemes for the viscosity (harmonic, geometric and arithmetic).</small>
 <figure>
   <img src="/assets/images/vrms_NS-1.png" alt="inst_sphere" style="width:700px"/>
-  <figcaption>v<sub>rms</sub> as function of element size for the instantaneous 2D sphere experiment in case of no slip boundary
+  <figcaption>Root-mean-square velocity (v<sub>rms</sub>) as function of element size for the instantaneous 2D sphere experiment in case of no slip boundary
 conditions and with different average schemes for the viscosity. Results are compared with results obtained by <a href="https://aspect.geodynamics.org/" target="_blank">ASPECT</a>.</figcaption>
 </figure>
 
@@ -99,7 +98,7 @@ conditions and with different average schemes for the viscosity. Results are com
 <small>This experiment is performed as explained by <a href="https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/97JB01353" target="_blank">Van Keken et al. (1997)</a>. The domain has L<sub>x</sub>=0.9142 and L<sub>y</sub>=1 and gravity equal to -1. Two fluids with same constant viscosities and different densities are distributed in the domain, with the lighter fluid at the bottom. The initial interface between the fluids is given by y(x)=0.2+0.02 cos(πx L<sub>x</sub>). The experiment is performed with grid sizes between 50×50 and 256×256 elements. Velocity boundary conditions are set to no slip at the top and the bottom, and to free slip at the sides of the domain.</small>
 <figure>
   <img src="/assets/images/RT-1.png" alt="RT" style="width:700px"/>
-  <figcaption>v<sub>rms</sub> of the Rayleigh-Taylor experiment as function of time for different resolution of the grid.</figcaption>
+  <figcaption>Root-mean-square velocity (v<sub>rms</sub>) of the Rayleigh-Taylor experiment as function of time for different resolution of the grid.</figcaption>
 </figure>
 
 # <span style="font-size:22px"><u>Falling block</u></span>
@@ -107,7 +106,7 @@ conditions and with different average schemes for the viscosity. Results are com
 The block is initially centred at x=250 km; y=400 km and has a size of 100×100 km. The fluid
 surrounding the block has constant viscosities and densities. The benchmark tests with different viscosities and densities
 of the block, with higher density than the surrounding fluid. Velocity boundary conditions are set to free slip conditions on all sides of the
-domain. The velocity in the centre of the falling block at t=0 is measured for all experiments and it is plotted as function of the viscosity contrast.</small>
+domain.</small>
 <figure>
   <img src="/assets/images/Falling-1.png" alt="falling" style="width:700px"/>
   <figcaption>Initial velocity relative to the density contrast at the centre of the falling block as function of the viscosity
@@ -121,10 +120,10 @@ The fluid surrounding the sphere occupies the domain for y≤0.75, while for y>0
 Velocity boundary conditions are set to free slip on all sides. The Courant number is set to 0.25. The experiments
 run for 200 s using grid resolutions from 150×150 to 512×512 elements, with 25 randomly distributed markers per
 element, and for different average schemes for the viscosity. The interface between the fluid and the air is tracked by
-means of the markers chain. The results have been compared to <a href="https://aspect.geodynamics.org/" target="_blank">ASPECT</a> and can be found <a href="https://github.com/cedrict/fieldstone/tree/master/images/stokes_sphere_fs2D" target="_blank">here</a>.</small>
+means of the markers chain.</small>
 <figure>
   <img src="/assets/images/vrms_arithm-1.png" alt="sphere" style="width:700px"/>
-  <figcaption>v<sub>rms</sub> for different grid resolutions as function of time in case of an arithmetic average.
+  <figcaption>Root-mean-square velocity (v<sub>rms</sub>) for different grid resolutions as function of time in case of an arithmetic average.
   Results are compared with results obtained with <a href="https://aspect.geodynamics.org/" target="_blank">ASPECT</a>.</figcaption>
 </figure>
 
@@ -133,8 +132,7 @@ means of the markers chain. The results have been compared to <a href="https://a
 L<sub>x</sub>=L<sub>y</sub>=500 km and a grid resolution of 200×200 elements, each of them containing 16 markers. A buoyant fluid is overlain by a denser fluid.
 The initial interface between the fluids has an initial sinusoidal shape of 5 km amplitude. Velocity boundary conditions
 are set to free slip conditions at the sides and no slip at the bottom, while the top is free surface. The experiment
-is performed with various fixed time steps. The vertical position of the free
-surface at x=L<sub>x</sub> is tracked for each simulation, with or without the stabilisation algorithm.</small>
+is performed with various fixed time steps.</small>
 <figure>
   <img src="/assets/images/Kaus_random-1.png" alt="kaus" style="width:700px"/>
   <figcaption>Evolution of the y coordinate in x=L<sub>x</sub> as function of time for different time steps, with and without the
@@ -238,7 +236,16 @@ predicted by the code (panels a, b and c) and those created using example <i>She
 9.4 in <a href="https://www.cambridge.org/core/books/introduction-to-numerical-geodynamic-modelling/F2CDB0729FE6DE586BCD9B18C059AE07" target="_blank">Gerya (2010)</a> (panels d, e and f).</figcaption>
 </figure>
 
+
+
 # <span style="font-size:22px"><u>Mantle convection</u></span>
+<small>This problem is performed as presented by <a href="https://academic.oup.com/gji/article/98/1/23/622167?login=false" target="_blank">Blankenbach et al. (1989)</a>(constant viscosity cases), in a 2D unit square domain with gravity acceleration g<sub>y</sub> = 10<sup>10</sup>Ra. The experiment is performed with three different Rayleigh numbers (Ra=10<sup>4</sup>, 10<sup>5</sup> and 10<sup>6</sup>) and with different grid resolution (between 32×32 and 128×128 elements).
+The fluid has constant viscosity, initial density, heat capacity, thermal conductivity (η =ρ0=Cp=k=1), reference temperature (T<sub>0</sub>=0) and thermal expansion coefficient (α=10<sup>−10</sup>). Temperatures are set to 0 on top and 1 on bottom of the domain. Velocity boundary conditions are set to free slip on all sides. The initial temperature field is given by T(x,y)=(1−y)+0.01 cos(πx) sin(πy).</small>
+<figure>
+  <img src="/assets/images/Convection.png" alt="energy" style="width:700px"/>
+  <figcaption>Root-mean-square velocity (v<sub>rms</sub>) (panels a, c and e) and Nusselt number (panels b, d and f) as function of time for different grid resolution. Panels a and b show the results for Ra=10<sup>4</sup>; panels c and d show the results for Ra=10<sup>5</sup>; panels e and f show the results for Ra=10<sup>6</sup>. Purple lines indicate the convergence values for the v<sub>rms</sub> and the Nusselt number from <a href="https://academic.oup.com/gji/article/98/1/23/622167?login=false" target="_blank">Blankenbach et al. (1989)</a> at the steady state.</figcaption>
+</figure>
+
 # <span style="font-size:22px"><u>Visco-plastic mantle convection</u></span>
 # <span style="font-size:22px"><u>Thin layer entrainment</u></span>
 # <span style="font-size:22px"><u>Hydrated sinking cylinder</u></span>

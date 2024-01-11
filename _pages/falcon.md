@@ -1,5 +1,5 @@
 ---
-title: "**<span style="color:orange">FALCON</span>**)"
+title: "FALCON"
 layout: single
 permalink: /falcon/
 #toc: true

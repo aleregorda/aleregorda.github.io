@@ -1,5 +1,5 @@
 ---
-title: "FALCON code"
+title: "style="color:orange">FALCON</span>** (**<span style="color:orange">F</span>**em **<span style="color:orange">AL</span>**gorithm for **<span style="color:orange">CO</span>**mputational a**<span style="color:orange">N</span>**alisys)"
 layout: single
 permalink: /falcon/
 #toc: true

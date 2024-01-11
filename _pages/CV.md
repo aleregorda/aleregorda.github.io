@@ -9,7 +9,7 @@ author_profile: true
 #  nav: "main"
 ---
 
-*<span style="font-size:12px">The .pdf file of my curriculum vitae can be downloaded from <a href="/assets/files/CV_Regorda.pdf" target="_blank">here</a>.</span>*
+*<small>The .pdf file of my curriculum vitae can be downloaded from <a href="/assets/files/CV_Regorda.pdf" target="_blank">here</a>.</small>*
 
 <object data="/assets/files/CV_Regorda.pdf" type="application/pdf" width="1000px" height="1000px">
     <embed src="/assets/files/CV_Regorda.pdf"></embed>

@@ -1,5 +1,5 @@
 ---
-title: Curriculum vitae
+title: <span style="color:orange">Curriculum vitae</span> 
 layout: single
 permalink: /cv/
 author_profile: true

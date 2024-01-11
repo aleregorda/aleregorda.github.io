@@ -1,5 +1,5 @@
 ---
-title: <span style="color:orange">FALCON</span> (**<span style="color:orange">F</span>**em **<span style="color:orange">AL</span>**gorithm for **<span style="color:orange">CO</span>**mputational a**<span style="color:orange">N</span>**alisys)
+title: <span style="color:orange">FALCON</span><br><span style="font-size:40px">(**<span style="color:orange">F</span>**em **<span style="color:orange">AL</span>**gorithm for **<span style="color:orange">CO</span>**mputational a**<span style="color:orange">N</span>**alisys)</span>
 layout: single
 permalink: /falcon/
 #toc: true
@@ -7,12 +7,19 @@ permalink: /falcon/
 author_profile: false
 sidebar:
   nav: "doc_falcon2"
+header:
+  overlay_color: "#000"
+  overlay_filter: "0.5"
+  overlay_image: /assets/images/sub_T_large.png
+#  actions:
+    #- label: "Learn More"
+      #url: "/terms/"
+  #caption: "Photo credit: [**Unsplash**](https://unsplash.com)"
+#excerpt: 
+
 ---
 
-*<span style="font-size:12px">The Gihub repository of this project can be found <a href="https://github.com/aleregorda/Code_description" target="_blank">here</a> and you can download the .zip file containing all of the files at this [link](https://github.com/aleregorda/Code_description/archive/refs/heads/main.zip).</span>*
-
-<small>**<span style="color:orange">FALCON</span>** is a FEM code written in Fortran90 used to study large-scale geodynamics system, such as continental rifting and subductions.
-<a href="/assets/files/FALCON_Description.pdf" target="_blank">Here</a> you can download the .pdf file with the complete description of all the fetures implemented in the code and all the benchmarks performed.</small>
+<small>**<span style="color:orange">FALCON</span>** is a FEM code written in Fortran90 used to study large-scale geodynamics system, such as continental rifting and subductions. <a href="/assets/files/FALCON_Description.pdf" target="_blank"><span style="color:lightblue">Here</span></a> you can download the .pdf file with the complete description of all the fetures implemented in the code and all the benchmarks performed. The Gihub repository of this project can be found <a href="https://github.com/aleregorda/Code_description" target="_blank"><span style="color:lightblue">here</span></a> and you can download the .zip file containing all of the files at this <a href="https://github.com/aleregorda/Code_description/archive/refs/heads/main.zip" target="_blank"><span style="color:lightblue">link</span></a>.</small>
 
 # <span style="font-size:30px" style="color:green">Applications</span>
 **(Working on it!)**

@@ -1,5 +1,5 @@
 ---
-title: "FALCON"
+title: <span style="color:orange">FALCON</span> (**<span style="color:orange">F</span>**em **<span style="color:orange">AL</span>**gorithm for **<span style="color:orange">CO</span>**mputational a**<span style="color:orange">N</span>**alisys)
 layout: single
 permalink: /falcon/
 #toc: true
@@ -9,16 +9,17 @@ sidebar:
   nav: "doc_falcon2"
 ---
 
-*<span style="font-size:12px">The Gihub repository of this project can be found <a href="https://github.com/aleregorda/Code_description" target="_blank">here</a>. The .pdf file with a complete description of the code can be downloaded from <a href="/assets/files/FALCON_Description.pdf" target="_blank">here</a>, while at this [link](https://github.com/aleregorda/Code_description/archive/refs/heads/main.zip) you can download the .zip file containing all of the files.</span>*
+*<span style="font-size:12px">The Gihub repository of this project can be found <a href="https://github.com/aleregorda/Code_description" target="_blank">here</a> and you can download the .zip file containing all of the files at this [link](https://github.com/aleregorda/Code_description/archive/refs/heads/main.zip).</span>*
 
-<small>**<span style="color:orange">FALCON</span>** (**<span style="color:orange">F</span>**em **<span style="color:orange">AL</span>**gorithm for **<span style="color:orange">CO</span>**mputational a**<span style="color:orange">N</span>**alisys) is a FEM code written in Fortran90 used to study large-scale geodynamics system, such as continental rifting and subductions.</small>
+<small>**<span style="color:orange">FALCON</span>** is a FEM code written in Fortran90 used to study large-scale geodynamics system, such as continental rifting and subductions.
+<a href="/assets/files/FALCON_Description.pdf" target="_blank">Here</a> you can download the .pdf file with the complete description of all the fetures implemented in the code and all the benchmarks performed.</small>
 
-# <span style="font-size:30px">Applications</span>
+# <span style="font-size:30px" style="color:green">Applications</span>
 **(Working on it!)**
 # <span style="font-size:22px"><u>Venus</u></span>
 # <span style="font-size:22px"><u>Sesia</u></span>
 
-# <span style="font-size:30px">Benchmarks</span>
+# <span style="font-size:30px" style="color:green">Benchmarks</span>
 
 *<span style="font-size:12px">The Gihub repository of this project can be found <a href="https://github.com/aleregorda/Benchmarks" target="_blank">here</a>. You can download the .zip file containing all the raw data of the benchmarks performed at this [link](https://github.com/aleregorda/Benchmarks/archive/refs/heads/main.zip).</span>*
 

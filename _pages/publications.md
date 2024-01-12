@@ -9,7 +9,7 @@ sidebar:
 header:
   overlay_color: "#000"
   overlay_filter: "0.5"
-  overlay_image: /assets/images/pub.JPG
+  overlay_image: /assets/images/publication.JPG
 #  actions:
     #- label: "Learn More"
       #url: "/terms/"

@@ -17,7 +17,7 @@ minimal_mistakes_skin    : "dark" # "default", "air", "aqua", "contrast", "dark"
 
 # Site Settings
 locale                   : "en_GB"
-title                    : "alerego"
+title                    : "Alessandro Regorda"
 title_separator          : "|"
 subtitle                 : "Home"
 name                     : "Alessandro Regorda"
@@ -104,17 +104,20 @@ analytics:
 # Site Author
 author:
   name             : "Alessandro Regorda"
-  avatar           : "/assets/images/Lemmy.jpg"
-  bio              : "Biography"
-  location         : "Milan, Italy"
-  email            : "alessandro.regorda@gmail.com"
+  avatar           : "/assets/images/avatar_red.png"
+  bio              : "Post-Doc at Università degli Studi di Milano; Ph.D. in Earth Sciences (2017)."
+  location         : Department of Earth Sciences<br>
+                     Università degli Studi di Milano<br>
+                     via Botticelli, 23 - 20133<br>
+                     Milan, Italy 
+#  email            : "alessandro.regorda@unimi.it"
   links:
-    - label: "Università degli Studi di Milano"
-      icon: "fab fa fa-university"
-      url: "https://www.unimi.it/it"
-#    - label: "Personal e-mail"
-#      icon: "fas fa-fw fa-envelope"
-#      url: "mailto:alessandro.regorda@gmail.com"
+#    - label: "Università degli Studi di Milano"
+#      icon: "fab fa fa-university"
+#      url: "https://www.unimi.it/it"
+    - label: "E-mail"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:alessandro.regorda@unimi.it"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/aleregorda/"
@@ -124,9 +127,9 @@ author:
     - label: "OrcID"
       icon: "fab fa fa-id-badge"
       url: "https://orcid.org/my-orcid?orcid=0000-0002-7677-4542"
-    - label: "Work email"
-      icon: "fas fa-fw fa-envelope"
-      url: "mailto:alessandro.regorda@unimi.it"
+#    - label: "Work email"
+#      icon: "fas fa-fw fa-envelope"
+#      url: "mailto:alessandro.regorda@unimi.it"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"

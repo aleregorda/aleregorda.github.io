@@ -1,7 +1,7 @@
 # main links
 main:
-  - title: "Home"
-    url: /docs/home/
+#  - title: "Home"
+#    url: /docs/home/
   - title: "FALCON"
 #    url: https://aleregorda.github.io/Code_description/
     url: /falcon/
@@ -45,13 +45,13 @@ doc_falcon:
         url: "/docs/benchmark/#mantle-advection"
       
 doc_falcon2:
-  - title: "Applications"
-    url: /falcon/#applications
+  - title: "Code description"
+    url: /falcon/#code-description
     children:
-      - title: "Venus"
-        url: /falcon/#venus
-      - title: "Sesia"
-        url: /falcon/#sesia
+      - title: "Markers advection"
+        url: /docs/description/#markers-advection
+      - title: "Nonlinear rhology"
+        url: /docs/description/#nonlinear-rheology
   - title: "Benchmark"
     url: /falcon/#benchmarks
     children:
@@ -99,13 +99,20 @@ doc_falcon2:
         url: /falcon/#hydrated-sinking-cylinder
       - title: "Melting"
         url: "/falcon/#melting"
+  - title: "Applications"
+    url: /falcon/#applications
+    children:
+      - title: "Venus"
+        url: /falcon/#venus
+      - title: "Sesia"
+        url: /falcon/#sesia
 
 doc_pub:
   - title: "Publications"
     url: /publications/
     children:
-      - title: "Papers"
-        url: /publications/#papers
+      - title: "Peer-reviewed articles"
+        url: /publications/#peer-reviewed-articles
       - title: "Oral presentations"
         url: /publications/#oral-presentations
       - title: "Posters"

@@ -1,6 +1,6 @@
 ---
-title: <span style="color:orange">Curriculum vitae</span> 
-layout: single
+title: <span style="color:orange;font-size:40px">Curriculum vitae</span> 
+layout: splash
 permalink: /cv/
 author_profile: true
 #toc: true

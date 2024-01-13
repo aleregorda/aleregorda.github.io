@@ -6,3 +6,10 @@
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+.masthead {
+    position: sticky;
+    top: 1;
+    height: auto;
+    background-color:rgb(38,42,50);
+}

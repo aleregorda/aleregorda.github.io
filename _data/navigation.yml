@@ -32,8 +32,8 @@ main:
 #    url: /about/
   # - title: "Sample Collections"
   #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+#  - title: "Sitemap"
+#    url: /sitemap/
 
 doc_falcon:
   - title: "Introduction"

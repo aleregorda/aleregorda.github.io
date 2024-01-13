@@ -2,6 +2,7 @@
 title: <span style="color:orange;font-size:40px">FALCON</span><br><span style="font-size:30px">(**<span style="color:orange">F</span>**em **<span style="color:orange">AL</span>**gorithm for **<span style="color:orange">CO</span>**mputational a**<span style="color:orange">N</span>**alisys)</span>
 layout: single
 classes: wide
+#read_time: true
 permalink: /falcon/
 #toc: true
 #toc_label: "Contents"

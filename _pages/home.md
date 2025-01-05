@@ -1,7 +1,7 @@
 ---
 layout: single
 classes: wide
-title: <span style="color:orange;font-size:40px">Alessandro Regorda</span><br><span style="color:gray;font-size:30px">Postdoctoral researcher</span>
+title: <span style="color:orange;font-size:40px">Alessandro Regorda</span><br><span style="color:gray;font-size:30px">Tenure track researcher</span>
 author_profile: true
 permalink: /docs/home/
 header:

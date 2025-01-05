@@ -21,9 +21,11 @@ header:
 
 <ul>
 
-<li><small>Anna Maria Marotta, Riccardo Barzaghi, Arcangela Bollino, <b>Alessandro Regorda</b>, Roberto Sabadini (2023).  <a href="https://www.sciencedirect.com/science/article/abs/pii/S0040195123004080" target="_blank">The gravitational signature of the dynamics of oceanization in the Gulf of Aden</a>. Tectonophysics, 869, 230110.</small></li>
+<li><small><b>Alessandro Regorda</b>, Manuel Roda (2024).  <a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2024JB029908" target="_blank">Thermo-Mechanical Effects of Microcontinent Collision on Ocean-Continent Subduction System</a>. JGR Solid Earth, 129(12).</small></li>
 
-<li><small>Manuel Roda, Maria Iole Spalla, Marco Filippi, Jean-Marc Lardeaux, Gisella Rebay, <b>Alessandro Regorda</b>, Davide Zanoni, Michele Zucali, Guido Gosso (2023). <a href="https://www.mdpi.com/2076-3263/13/10/300" target="_blank">Metamorphic Remnants of the Variscan Orogeny across the Alps and Their Tectonic Significance</a>. Geosciences 13, 300.</small></li>
+<li><small>Anna Maria Marotta, Riccardo Barzaghi, Arcangela Bollino, <b>Alessandro Regorda</b>, Roberto Sabadini (2023). <a href="https://www.sciencedirect.com/science/article/abs/pii/S0040195123004080" target="_blank">The gravitational signature of the dynamics of oceanization in the Gulf of Aden</a>. Tectonophysics, 869, 230110.</small></li>
+
+<li><small>Manuel Roda, Maria Iole Spalla, Marco Filippi, Jean-Marc Lardeaux, Gisella Rebay, <b>Alessandro Regorda</b>, Davide Zanoni, Michele Zucali, Guido Gosso (2023). <a href="https://www.mdpi.com/2076-3263/13/10/300" target="_blank">Metamorphic Remnants of the Variscan Orogeny across the Alps and Their Tectonic Significance</a>. Geosciences, 13, 300.</small></li>
 
 <li><small>Davide Zanoni, Marco Filippi, Manuel Roda, <b>Alessandro Regorda</b>, Maria Iole Spalla (2023). <a href="https://www.tandfonline.com/doi/full/10.1080/00206814.2023.2206443" target="_blank">Alpine convergence record in the Carboniferous Badstub Formation, Upper Austroalpine basement nappes, Austria</a>. International Geology Review</small></li>
 
@@ -77,9 +79,15 @@ header:
 
 <ul>
 
+<li><small>Ada Lovelace Workshop - [Sète, 01/09/2024-06/09/2024] - <span style="color:lightblue">"Thermal effects of microcontinents subduction: insight
+from 2D numerical models"</span> - <b>Regorda A.</b> & Roda M.</small></li>
+
+<li><small>CRUST Plenary Workshop - [Chieti, 23/06/2024-25/06/2024] - <span style="color:lightblue">"2D numerical simulations of micro-continents collision
+in ocean-continent subduction systems"</span> - <b>Regorda A.</b> & Roda M.</small></li>
+
 <li><small>Geomod - [Paris, 26/09/2023-28/09/2023] - <span style="color:lightblue">"2D numerical simulations of micro-continents collision in ocean-continent subduction systems"</span> - <b>Regorda A.</b> & Roda M.</small></li>
 
-<li><small>GNGTS Annual congress - [Trieste, 27/06/2027-29/06/2022] - <span style="color:lightblue">"Parametric study of the effects of micro-continents collision in a oceanic subduction systems by 2D numerical simulations"</span> - <b>Regorda A.</b>, Roda M. & Thieulot C.</small></li>
+<li><small>GNGTS Annual congress - [Trieste, 27/06/2022-29/06/2022] - <span style="color:lightblue">"Parametric study of the effects of micro-continents collision in a oceanic subduction systems by 2D numerical simulations"</span> - <b>Regorda A.</b>, Roda M. & Thieulot C.</small></li>
 
 <li><small>GNGTS Annual congress - [Online, 22/06/2021-24/06/2021] - <span style="color:lightblue">"Metamorphic and deformation patterns produced during an oceanic subduction: insights from 2D numerical models"</span> - <b>Regorda A.</b>, Spalla M.I., Roda M., Lardeaux J.-M. & Marotta A.M.</small></li>
 

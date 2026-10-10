@@ -52,6 +52,8 @@ doc_falcon:
         url: /falcon/#momentum-and-energy-equations
       - title: "Non-linear rheologies"
         url: /falcon/#non-linear-rheologies
+      - title: "Strain softening"
+        url: /falcon/#strain-softening
       - title: "Sticky air and free surface"
         url: /falcon/#sticky-air-and-free-surface
       - title: "Phase changes and hydration"
@@ -93,6 +95,8 @@ doc_falcon:
         url: /falcon/#indenter
       - title: "Brick"
         url: "/falcon/#brick"
+      - title: "Integrated deformation"
+        url: /falcon/#integrated-deformation
       - title: "2D Stokes sphere"
         url: "/falcon/#2d-stokes-sphere"
       - title: "Stabilisation algorithm"
